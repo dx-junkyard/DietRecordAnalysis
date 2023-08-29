@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  # MySQL
+  db:
+    image: mysql:latest
+    container_name: dietrecord_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dietrecorddb
+      MYSQL_USER: dietrecord
+      MYSQL_PASSWORD: dietrecord
+      TZ: 'Asia/Tokyo'
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+    - ./mysql/data:/var/lib/mysql
+    - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    - ./mysql/db/:/docker-entrypoint-initdb.d
+    ports:
+    - 3306:3306
+

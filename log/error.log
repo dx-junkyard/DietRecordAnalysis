@@ -1,0 +1,120 @@
+# import 中に出るエラー、ほとんどはMySQLのtext最大サイズを超えたため、格納に失敗していると思われる
+
+JSON decoding error: Expecting ',' delimiter: line 1 column 60272 (char 60271)
+Faulty data: 小さい字の「会社は"新聞"を絶えず注意し
+JSON decoding error: Expecting ',' delimiter: line 1 column 69379 (char 69378)
+Faulty data: パリの交通担当者も"こんな法律を作ったら
+JSON decoding error: Expecting ',' delimiter: line 1 column 144225 (char 144224)
+Faulty data: 化した。しかもその"聖戦"の目的美化のた
+JSON decoding error: Expecting ',' delimiter: line 1 column 135905 (char 135904)
+Faulty data: すが、「いえづくり"85」でありますとか
+JSON decoding error: Expecting ',' delimiter: line 1 column 39104 (char 39103)
+Faulty data: 出した「エネルギー"81」という通産省編
+JSON decoding error: Expecting ',' delimiter: line 1 column 145413 (char 145412)
+Faulty data: る外相\u3000"首相候補"の力量をか
+JSON decoding error: Expecting ',' delimiter: line 1 column 34172 (char 34171)
+Faulty data: 記念の本は「海外篇"米国海軍の新艦艇"は
+JSON decoding error: Expecting ',' delimiter: line 1 column 43138 (char 43137)
+Faulty data: 新聞では「防衛予算"満額獲得"を\u30
+JSON decoding error: Expecting ',' delimiter: line 1 column 22866 (char 22865)
+Faulty data: 、大きな見出しで「"ガス値下げ"急浮上\
+JSON decoding error: Expecting ',' delimiter: line 1 column 173729 (char 173728)
+Faulty data: れない」との゛裁定"を出し、その場をおさ
+JSON decoding error: Expecting ',' delimiter: line 1 column 163872 (char 163871)
+Faulty data: 例えば「いえづくり"８５」、それからセブ
+JSON decoding error: Expecting ',' delimiter: line 1 column 21407 (char 21406)
+Faulty data: 倫理の゛お目付け役"ならではの戸惑いや悩
+JSON decoding error: Expecting ',' delimiter: line 1 column 23342 (char 23341)
+Faulty data: 所に行けるような、"生きる場"がほしい。
+JSON decoding error: Expecting ',' delimiter: line 1 column 161804 (char 161803)
+Faulty data: u3000まず、「"８４国際植生学会日本
+JSON decoding error: Expecting ',' delimiter: line 1 column 43168 (char 43167)
+Faulty data: えぬものは背負わぬ"とも言って置いた。」
+JSON decoding error: Expecting ',' delimiter: line 1 column 47041 (char 47040)
+Faulty data: 円定額。それからＡ"で二十万六百円、これ
+JSON decoding error: Expecting ',' delimiter: line 1 column 160629 (char 160628)
+Faulty data: う一つ資料の４、4"を見てください。これ
+JSON decoding error: Expecting ',' delimiter: line 1 column 75100 (char 75099)
+Faulty data: 庁は「物価レポート"86」を発表いたしま
+JSON decoding error: Expecting ',' delimiter: line 1 column 121623 (char 121622)
+Faulty data: ーの「レジャー白書"88」、これを拝見い
+JSON decoding error: Expecting ',' delimiter: line 1 column 51613 (char 51612)
+Faulty data: パーコンピューター"ＸＭＰ２１６というも
+JSON decoding error: Expecting ',' delimiter: line 1 column 196838 (char 196837)
+Faulty data: 核持ち込みをめぐる"日米密約"が存在する
+JSON decoding error: Expecting ',' delimiter: line 1 column 86497 (char 86496)
+Faulty data: して、「ＰＡＣＥＸ"89\u3000全体
+JSON decoding error: Expecting ',' delimiter: line 1 column 11219 (char 11218)
+Faulty data: 元に「物価レポート"89」の説明資料をお
+JSON decoding error: Expecting ',' delimiter: line 1 column 75368 (char 75367)
+Faulty data: スで後援会事務所の"小沢食堂"にピストン
+JSON decoding error: Expecting ',' delimiter: line 1 column 171667 (char 171666)
+Faulty data: 00markets"\u3000redu
+JSON decoding error: Expecting ',' delimiter: line 1 column 86375 (char 86374)
+Faulty data: 庁が「物価レポート"89」というのを実は
+JSON decoding error: Expecting ',' delimiter: line 1 column 20838 (char 20837)
+Faulty data: では火山灰を含んだ"黒い雨"が降り、鼻を
+JSON decoding error: Expecting ',' delimiter: line 1 column 171214 (char 171213)
+Faulty data: こに「ＧＹＯＫＹＯ"90」というパンフレ
+JSON decoding error: Expecting ',' delimiter: line 1 column 16329 (char 16328)
+Faulty data: 簡易保険・郵便年金"90」という、このパ
+JSON decoding error: Expecting ',' delimiter: line 1 column 183749 (char 183748)
+Faulty data: 十二年前、「金融の"黒い霧"を暴く」私が
+JSON decoding error: Expecting ',' delimiter: line 1 column 14251 (char 14250)
+Faulty data: かけジャンプアップ"９１運動を展開し、収
+JSON decoding error: Expecting ',' delimiter: line 1 column 43791 (char 43790)
+Faulty data: す国際防災会議千葉"９２を通じ、災害が多
+JSON decoding error: Expecting ',' delimiter: line 1 column 49545 (char 49544)
+Faulty data: に、「国土レポート"９１」というのを見た
+JSON decoding error: Expecting ',' delimiter: line 1 column 188040 (char 188039)
+Faulty data: ュニケーション東京"９２というのを実は見
+JSON decoding error: Expecting ',' delimiter: line 1 column 152094 (char 152093)
+Faulty data: u3000郵便局の"運動場"」。これはど
+JSON decoding error: Expecting ',' delimiter: line 1 column 125495 (char 125494)
+Faulty data: れを金利減免などの"政治力"によって乗り
+JSON decoding error: Expecting ',' delimiter: line 1 column 192288 (char 192287)
+Faulty data: 企庁の物価レポート"９３の数値を当てはめ
+JSON decoding error: Expecting ',' delimiter: line 1 column 24023 (char 24022)
+Faulty data: して、特Ａ、Ａ、A"、Ｂといったランクづ
+JSON decoding error: Expecting ',' delimiter: line 1 column 51381 (char 51380)
+Faulty data: \u3000Ｗｈｏ"ｓ\u3000Ｗｈｏ
+JSON decoding error: Expecting ',' delimiter: line 1 column 5740 (char 5739)
+Faulty data: るわけでありまして"とにかくますます生活
+JSON decoding error: Expecting ',' delimiter: line 1 column 40516 (char 40515)
+Faulty data: 選挙公報の中で、「"９６総選挙三つの公約
+JSON decoding error: Expecting ',' delimiter: line 1 column 11818 (char 11817)
+Faulty data: \u3000問題の"病巣"が初めて明らか
+JSON decoding error: Expecting ',' delimiter: line 1 column 22185 (char 22184)
+Faulty data: ーフェアＪＡＰＡＮ"98、それから"98
+JSON decoding error: Expecting ',' delimiter: line 1 column 110296 (char 110295)
+Faulty data: による「復興カルテ"99」速報版というの
+JSON decoding error: Expecting ',' delimiter: line 1 column 76889 (char 76888)
+Faulty data: 夜の「ドキュメント"99」、これは終わり
+JSON decoding error: Expecting ',' delimiter: line 1 column 53722 (char 53721)
+Faulty data: ろに新しい団地、A"という団地をつくるわ
+JSON decoding error: Expecting ',' delimiter: line 1 column 200556 (char 200555)
+Faulty data: known one"s support 
+JSON decoding error: Expecting ',' delimiter: line 1 column 59750 (char 59749)
+Faulty data: 他の直轄方式とかＡ"とか新しい方法が今も
+JSON decoding error: Expecting ',' delimiter: line 1 column 18262 (char 18261)
+Faulty data: した。それから、Ａ"道路、いわゆる薄皮有
+JSON decoding error: Expecting ',' delimiter: line 1 column 27939 (char 27938)
+Faulty data: ＣタイプあるいはＣ"タイプについては、平
+JSON decoding error: Expecting ',' delimiter: line 1 column 109645 (char 109644)
+Faulty data: nd anyone"s imaginat
+JSON decoding error: Expecting ',' delimiter: line 1 column 89264 (char 89263)
+Faulty data: 患者会、肝ったママ"s、このお母さん、ま
+JSON decoding error: Expecting ',' delimiter: line 1 column 177474 (char 177473)
+Faulty data: んたち、肝ったママ"sという会があるんで
+JSON decoding error: Expecting ',' delimiter: line 1 column 38371 (char 38370)
+Faulty data: rld Women"s Handball
+JSON decoding error: Expecting ',' delimiter: line 1 column 42920 (char 42919)
+Faulty data: ch people"s lives wi
+JSON decoding error: Expecting ',' delimiter: line 1 column 63101 (char 63100)
+Faulty data: おりまして、地区防"ｚと呼んでおりますけ
+JSON decoding error: Expecting ',' delimiter: line 1 column 9875 (char 9874)
+Faulty data: フィーを入れるとI"m possible
+JSON decoding error: Expecting ',' delimiter: line 1 column 106772 (char 106771)
+Faulty data: ていたという「Ｉｔ"ｓ\u3000ＭＹ\
+JSON decoding error: Expecting ',' delimiter: line 1 column 158444 (char 158443)
+Faulty data:  at Japan"s Public S
