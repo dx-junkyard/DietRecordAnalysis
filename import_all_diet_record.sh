@@ -2,10 +2,10 @@
 
 # ベースディレクトリのパスを変数に格納
 # 例）BASE_DIR="/Users/userhome/download_record_of_Diet_proceedings/dl"
-BASE_DIR=（各年ごとのダウンロードファイルが配置されたディレクトリを記載してください）
+BASE_DIR="./dl"
 
 # ログディレクトリのパスを変数に格納
-# 例）LOG_DIR="/Users/userhome/dietrecord-python/log"
+# 例）LOG_DIR="./log"
 LOG_DIR=(LOGファイル出力先ディレクトリを記載してください）
 
 # logディレクトリが存在しない場合、作成
