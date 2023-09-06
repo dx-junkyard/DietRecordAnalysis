@@ -4,15 +4,16 @@ import os
 import sys
 import MeCab
 
-
-if len(sys.argv) < 4:
-    print("Usage: python script.py [START_YEAR] [END_YEAR] [KEYWORD]")
+if len(sys.argv) < 5:
+    print("Usage: python script.py [START_YEAR] [END_YEAR] [KEYWORD] [SPEAKER_POSITIONS]")
     sys.exit(1)
 
-# コマンドライン引数から西暦の年（開始と終了）とキーワードを取得
+# コマンドライン引数から西暦の年（開始と終了）、キーワード、SpeakerPositionキーワードを取得
 start_year = int(sys.argv[1])
 end_year = int(sys.argv[2])
 keyword = sys.argv[3]
+speaker_positions = sys.argv[4].split(',')  # カンマで区切られた文字列をリストに変換
+
 
 # キーワード名でディレクトリを作成（出力用）
 output_dir = f"{keyword}_sorted"
@@ -30,6 +31,13 @@ for year in range(start_year, end_year + 1):
 
     # CSVファイルを読み込む
     df = pd.read_csv(input_file_path)
+
+    # SpeakerPositionでフィルタリング
+    # NaNやNoneを除去
+    df = df.dropna(subset=['SpeakerPosition'])
+
+    # SpeakerPositionでフィルタリング
+    df = df[df['SpeakerPosition'].apply(lambda x: any(pos in x for pos in speaker_positions))]
 
     # 対策1: データが空でないか確認
     if df['Speech'].empty:
