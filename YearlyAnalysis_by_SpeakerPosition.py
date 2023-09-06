@@ -99,13 +99,34 @@ for year in range(start_year, end_year + 1):
 
 
         # TF-IDFスコアが高い単語を抽出
+        #feature_names = vectorizer.get_feature_names_out()
+        #tfidf_sorting = tfidf_matrix.sum(axis=0).A1.argsort()[::-1]
+        #top_n = 300  # 上位300単語を取得
+        #top_features = [feature_names[i] for i in tfidf_sorting[:top_n]]
+        # 
+        # 年と重要な単語をリストに追加
+        #important_words_list.append(f"{year}," + ",".join(top_features))
+
+        # 形態素解析して固有名詞とそのTF-IDFスコアを取得
         feature_names = vectorizer.get_feature_names_out()
-        tfidf_sorting = tfidf_matrix.sum(axis=0).A1.argsort()[::-1]
-        top_n = 300  # 上位300単語を取得
-        top_features = [feature_names[i] for i in tfidf_sorting[:top_n]]
+        tfidf_scores = tfidf_matrix.sum(axis=0).A1
+        proper_nouns = {}
+    
+        for i, feature in enumerate(feature_names):
+            node = mecab.parseToNode(feature)
+            while node:
+                if node.feature.split(",")[0] == "名詞" and node.feature.split(",")[1] == "固有名詞" and len(node.surface) >= 2:
+                    proper_nouns[feature] = tfidf_scores[i]
+                node = node.next
+    
+        # TF-IDFスコアが高い単語を抽出
+        sorted_proper_nouns = sorted(proper_nouns.items(), key=lambda x: x[1], reverse=True)
+        top_n = 50  # 上位10単語を取得
+        top_features = [word for word, score in sorted_proper_nouns[:top_n]]
     
         # 年と重要な単語をリストに追加
         important_words_list.append(f"{year}," + ",".join(top_features))
+        
 
 
     except ValueError as e:
