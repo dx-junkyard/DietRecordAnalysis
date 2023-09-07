@@ -20,6 +20,8 @@ output_dir = f"{keyword}_sorted"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
+# ストップワードのリストを定義
+stop_words = ['です', 'ます', 'こと', 'それ', 'として', 'の', 'て', 'に', 'なつ', 'で', '、', '。']
 
 # MeCabの初期化
 mecab = MeCab.Tagger("-Owakati")
@@ -75,7 +77,7 @@ for year in range(start_year, end_year + 1):
 
 
         # TF-IDFでテキストをベクトル化
-        vectorizer = TfidfVectorizer(tokenizer=lambda x: x.split())
+        vectorizer = TfidfVectorizer(tokenizer=lambda x: x.split(), ngram_range=(1, 3))
         tfidf_matrix = vectorizer.fit_transform(df['Tokenized_Speech'])
 
         # TF-IDFでテキストをベクトル化（ProperNouns列を使用）
