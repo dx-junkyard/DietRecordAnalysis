@@ -77,7 +77,7 @@ for year in range(start_year, end_year + 1):
 
         # 特定の単語（この例ではキーワード）に最も近い単語を表示
         similar_words = word2vec_model.wv.most_similar(keyword, topn=50)
-        filtered_similar_words = [(word, score) for word, score in similar_words if word not in stop_words][:10]
+        filtered_similar_words = [(word, score) for word, score in similar_words if word not in stop_words][:25]
 
         # 年と重要な単語をリストに追加
         words_with_scores = [f"{word}:{round(score, 2)}" for word, score in filtered_similar_words]

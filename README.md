@@ -58,3 +58,9 @@ python YearlyAnalysis_by_CentralSpeech.py 1947 2022 鉄道
 ```
 python YearlyAnalysis_by_SpeakerPosition.py 1947 2022 鉄道 "運輸,交通,鉄道"
 ```
+
+#### 2-3-3. 立場抽出
+「鉄道_sorted」に移動し、次のコマンドを実行すると発言者の立場一覧が取得できる。これを参考に2.3.2のオプションを決定する。
+```
+cat *.csv | cut -d',' -f4 | sort | uniq
+```
